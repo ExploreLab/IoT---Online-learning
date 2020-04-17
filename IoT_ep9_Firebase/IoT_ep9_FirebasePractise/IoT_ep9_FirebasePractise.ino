@@ -10,8 +10,8 @@
 ESP8266WiFiMulti WiFiMulti;
 
 // FIREBASE NAME/SECRET Config 
-#define PROJECT_IO "iotpim-2020.firebaseio.com"
-#define DATA_SECRET "arB4v6ZJuFxe18WWqC827Bn5nTVHg2bftni6rzO4"
+#define PROJECT_IO "Your_PROJECT_IO"
+#define DATA_SECRET "Your_DATA_SECRET"
 
 // WiFi Access Config
 #define SSID_1 "HOME12345"
@@ -100,7 +100,6 @@ void SetWiFi(){
   Serial.print("\n\nElectricl Engineering Enterprise Group\n");
   WiFiMulti.addAP(SSID_1, PASS_1);  
   WiFiMulti.addAP("AndroidAP", "ifmd0883");
-  WiFiMulti.addAP("EEEG Co.,Ltd", "VLAD@2018");
   Serial.println("Connecting Wifi...");
   delay(2000);  
   Serial.println("Connecting Wifi...");
@@ -111,9 +110,3 @@ void SetWiFi(){
     Serial.println(WiFi.localIP());
   }
 }
-
-/*CAT
- * 
-//#define PROJECT_IO "cat-khanngoen.firebaseio.com"
-//#define DATA_SECRET "Dh2nPXKNTsd8Ig7nG9BXdNMHBKYOeX1j1gkzTBZV"*/
-
