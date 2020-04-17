@@ -14,9 +14,7 @@ ESP8266WiFiMulti WiFiMulti;
 #define PASS_1 "CAT123"    /*Your_PASSWORD*/
 
 // LINE Access_Token config
-#define LINE_TOKEN "zVismzFDYNfkQHyKoDOgNk2sjqDnSfe01SkMUOvzh8R"
-/* TOKEN
-S6Jnp29YgA7UaXTWZxGWD8REr2F0X5iK9yakcD98SX3*/
+#define LINE_TOKEN "YOUR_LINE_TOKEN"
 
 String Your_ID1_ID2 = "Your_123_678";
 
@@ -25,7 +23,6 @@ void setup() {
   delay(10);
   Serial.print("\n\nElectricl Engineering Enterprise Group\n");
   WiFiMulti.addAP(SSID_1, PASS_1);
-  WiFiMulti.addAP("EEEG Co.,Ltd", "VLAD@2018");
   WiFiMulti.addAP("AndroidAP", "ifmd0883");
 
   Serial.println("Connecting Wifi...");
