@@ -85,23 +85,3 @@ String NowString() {
   return tmpNow;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //wifiMulti.addAP("EEEG Co.,Ltd", "VLAD@2018");
-
-
