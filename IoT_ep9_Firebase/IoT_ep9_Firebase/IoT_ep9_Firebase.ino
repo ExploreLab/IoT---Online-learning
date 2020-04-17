@@ -10,8 +10,8 @@
 ESP8266WiFiMulti WiFiMulti;
 
 // FIREBASE NAME/SECRET Config 
-#define PROJECT_IO "iotpim-2020.firebaseio.com"
-#define DATA_SECRET "arB4v6ZJuFxe18WWqC827Bn5nTVHg2bftni6rzO4"
+#define PROJECT_IO "YOUR_PROJECT_IO"
+#define DATA_SECRET "YOUR_DATA_SECRET"
 
 // WiFi Access Config
 #define SSID_1 "HOME12345"
