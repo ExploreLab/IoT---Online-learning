@@ -58,7 +58,6 @@ void SetWiFi(){
   Serial.print("\n\nElectricl Engineering Enterprise Group\n");
   WiFiMulti.addAP(SSID_1, PASS_1);  
   WiFiMulti.addAP("AndroidAP", "ifmd0883");
-  WiFiMulti.addAP("EEEG Co.,Ltd", "VLAD@2018");
   Serial.println("Connecting Wifi...");
   delay(2000);  
   Serial.println("Connecting Wifi...");
@@ -69,9 +68,3 @@ void SetWiFi(){
     Serial.println(WiFi.localIP());
   }
 }
-
-/*CAT
- * 
-//#define PROJECT_IO "cat-khanngoen.firebaseio.com"
-//#define DATA_SECRET "Dh2nPXKNTsd8Ig7nG9BXdNMHBKYOeX1j1gkzTBZV"*/
-
