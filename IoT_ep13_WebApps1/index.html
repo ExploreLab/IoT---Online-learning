@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<title>esp.firebase</title>
+<link rel="shortcut icon" href="IMG/eeeg.ico">  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+	body {font-family: "Poppins", sans-serif}
+	h1,h2,h3,h4,h5,h6 {
+	    font-family: "Playfair Display";
+	    letter-spacing: 5px;
+	    text-align: center;
+	}
+</style>
+
+<body>
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top">
+	  <div class="w3-bar w3-white w3-wide w3-padding-8 w3-card-2">
+	    <a href="#home" class="w3-bar-item w3-button w3-margin-left">Internet of Things</a>
+	    <div class="w3-right w3-hide-small">
+	      <a href="#Dashboard" class="w3-bar-item w3-button w3-margin-right">Dashboard</a>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Header -->
+	<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home"> 
+		<div class="w3-display-bottomleft w3-padding-xlarge w3-opacity">
+	    	<h1 class="w3-xxlarge">Electrical Engineering Enterprise Group</h1>
+	  	</div>
+	</header>
+
+	<!-- Page content -->.
+	<!-- Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+		<!-- Initialize Firebase -->
+
+
+	<!-- Str.Dashboard Section -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+		<div class="w3-container w3-padding-64 " id="Dashboard">
+		<h3>Dashboard</h3>
+		<h3><i class="fa fa-rss" aria-hidden="true"></i> BAAN SAON</h3>
+      		<h3>TEMP = <span id="TEMP" style="color:black;font-weight:bold">TEMP</span> <hr></h3>
+		</div>
+	<script>
+		var State1_1 = document.getElementById("TEMP");
+        var db_refState = firebase.database().ref().child("DHT");
+        db_refState.on("value", snap => {
+          State1_1.innerText = snap.val()["TEMP"]*1;
+	      });
+	</script>
+
+	<!-- Footer -->
+	<footer class="w3-center w3-light-grey w3-padding-32">
+	  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+	  <p>Developed by Electrical Engineering Enterprise Group</p>
+	</footer>
+</body>
+
+</html>
+
+
+
